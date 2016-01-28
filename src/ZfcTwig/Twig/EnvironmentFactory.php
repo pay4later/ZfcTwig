@@ -21,7 +21,7 @@ class EnvironmentFactory implements FactoryInterface
         $envClass = $options->getEnvironmentClass();
 
         /** @var \Twig_Environment $env */
-        $env = new $envClass(null, $options->getEnvironmentOptions());
+        $env = new $envClass($serviceLocator->get($options->getEnvironmentLoader()), $options->getEnvironmentOptions());
 
         if ($options->getEnableFallbackFunctions()) {
             $helperPluginManager = $serviceLocator->get('ViewHelperManager');
