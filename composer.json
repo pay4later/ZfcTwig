@@ -1,5 +1,5 @@
 {
-    "name": "zf-commons/zfc-twig",
+    "name": "momook/zfc-twig",
     "description": "Zend Framework 2 Module that provides a Twig rendering strategy and extensions to render actions or trigger events from your templates",
     "type": "library",
     "keywords": [
