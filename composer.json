@@ -1,5 +1,5 @@
 {
-    "name": "momook/zfc-twig",
+    "name": "pay4later/zfc-twig",
     "description": "Zend Framework 2 Module that provides a Twig rendering strategy and extensions to render actions or trigger events from your templates",
     "type": "library",
     "keywords": [
@@ -21,8 +21,8 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3",
-        "twig/twig": "~1.13"
+        "php": ">=5.5.9",
+        "twig/twig": "~1.24"
     },
 
     "autoload": {
@@ -31,6 +31,7 @@
         }
     },
     "require-dev": {
-        "zendframework/zend-view": "*"
+        "phpunit/phpunit": "^5.0",
+        "zendframework/zend-view": "^2.5"
     }
 }
