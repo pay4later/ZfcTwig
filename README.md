@@ -16,6 +16,28 @@ class.
 
 ## Documentation
 
+### Setting up Twig Environment
+
+<code>environment_options</code> array will be passed directly to Twig_Environment constructor.
+
+```php
+// in module configuration or autoload override
+$is_dev = isset($_SERVER['APP_ENV']) && 'development' === $_SERVER['APP_ENV'];
+return array(
+    'zfctwig' => array(
+        // http://twig.sensiolabs.org/doc/api.html#environment-options
+        'environment_options' => [
+            'cache' => getcwd().'/data/cache/twig',
+            'debug' => $is_dev,
+            'autoescape' => true,
+            'autoescape' => true,
+            'strict_variables' => $is_dev,
+        ],
+    ),
+);
+```
+See [Twig Documentation](http://twig.sensiolabs.org/doc/api.html#environment-options) for more options
+
 ### Setting up Twig extensions
 
 Extensions can be registered with Twig by adding the FQCN to the `extensions` configuration key which is exactly how the
