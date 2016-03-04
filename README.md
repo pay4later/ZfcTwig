@@ -18,7 +18,7 @@ class.
 
 ### Setting up Twig Environment
 
-<code>'environment_options'</code> array passed directly to Twig_Environment constructor.
+<code>environment_options</code> array will be passed directly to Twig_Environment constructor.
 
 ```php
 // in module configuration or autoload override
